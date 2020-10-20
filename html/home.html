@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<title>VacciNation Project home</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+
+body{
+            margin: 0;
+            padding: 0;
+
+                        content: '';
+                        position: fixed;
+                        width: 100vw;
+                        height: 100vh;
+                        background-image: url("bg4.jpg");
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        background-attachment: fixed;
+                        background-size: cover;
+
+                    }
+
+
+.about{
+  position:absolute
+  top:35%;
+  left: 20%;
+  width: 75%;
+  padding: 1% 1% 5% 5%;
+height:55%;
+
+  box-sizing: border-box;
+            background: rgba(217, 217, 217,.68);
+
+}
+
+ul {
+  list-style-type: none;
+
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #212121;
+}
+.footer{
+  position:absolute;
+  display:inline-block;
+  left: 10%;
+  right: 10%;
+  bottom:0.5%;
+ }
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color:#0a1c73;
+}
+
+/*Button used to open the chatbot*/
+.open-button {
+  background-color:#030303;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #ffffff;
+  z-index: 10;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: #ffffff;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focused */
+.form-container textarea:focus {
+  background-color: #ddd;
+
+}
+
+/*send button*/
+.form-container .btn {
+  background-color: #1ec926;/*green*/
+  color: #ffffff;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/*red bg color to the cancel button*/
+.form-container .cancel {
+  background-color: #db0d0d;/*red*/
+}
+
+/*when you hover over buttons*/
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+<header style="padding:30px 5px;text-align:center;background-color:rgba(0, 0,51,.85);color:#e6f2ff">
+ <h1>VacciNation</h1>
+</header>
+
+<ul>
+  <li><a class="active" href="home.html">Home</a></li>
+  <li><a href="login.html">Login</a></li>
+  <li><a href="fix.html">Fix an Appointment</a></li>
+  <li><a href="contact.html">Contacts</a></li>
+
+</ul>
+<button class="open-button" onclick="openForm()">ChatBot</button>
+
+
+
+<br>
+  <script type="text/javascript">
+    (function(d, m){
+        var kommunicateSettings =
+            {"appId":"114775a049d40ffc61e0f08c3a6b9eed3","popupWidget":true,"automaticChatOpenOnNavigation":true};
+        var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+        s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+        var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+        window.kommunicate = m; m._globals = kommunicateSettings;
+    })(document, window.kommunicate || {});
+/* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+</script>
+<div class="about" style="text-align:left">
+
+     <br> <h1>About Us</h1>
+
+
+    <p>VacciNation is a socially relevant web application developed by 3 IT students from Anna University. We developed VacciNation in order to help parents or guardians all over the country to keep track of vaccination schedules of their kids. Although India is a leading exporter of vaccines, our country is home to one-third of the
+world’s un-immunized children. The usual practice for immunization is the immunization card provided by hospitals. This is only useful when the parents or guardians are already educated about the need
+for vaccination. Our solution takes it a bit further by alerting the hospital when a baby/child needs to be vaccinated by keeping track of all the vaccination records of the individual and the hospital
+staff can alert the parents/guardians via SMS or email.This method is not only helpful in pushing the parents and guardians to get their kid immunized,
+but it also helps educate them about the need of on-time immunization. Our main goal is to reach and alert people who have less to no access to smartphones and wireless broadband connection and those who are unaware about the importance of vaccnination.</p>
+    </div>
+<br> <footer>
+    <div class="footer" style="text-align:center">
+    <p>Developed by Ananya Jaya Kumar, Nauvyashree A and Subitsha TLK</p>
+    </div>
+  </footer>
+</body>
+</html>
