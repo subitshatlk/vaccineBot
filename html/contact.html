@@ -169,80 +169,7 @@ img {vertical-align: middle;}
 
 </ul>
 
-<div class="slideshow-container">
 
-<div class="mySlides fade">
-  <div class="numbertext">1 / 5</div>
-  <img src="apollo.jpg" style="width:100%">
-  <div class="text">Apollo Hospital</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">2 / 5</div>
-  <img src="fortis.png" style="width:100%">
-  <div class="text">Fortis</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">3 / 5</div>
-  <img src="globalhospital.jpg" style="width:100%">
-  <div class="text">Global Hospital</div>
-</div>
-<div class="mySlides fade">
-  <div class="numbertext">4 / 5</div>
-  <img src="miot.png" style="width:100%">
-  <div class="text">MIOT Hospital</div>
-</div>
-<div class="mySlides fade">
-  <div class="numbertext">5 / 5</div>
-  <img src="Sims.png" style="width:100%">
-  <div class="text">Sims Hospital</div>
-</div>
-
-
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span>
-  <span class="dot" onclick="currentSlide(5)"></span>
-
-</div>
-
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" actives", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " actives";
-}
-</script>
 
 <div class="center">
 
@@ -259,7 +186,82 @@ Other important numbers :<br>
 <b>Bismi Ambulance Service:</b><br>
 +914424816219</p></div><hr>
 <div class="center">
-<br><center><h3><u>Hospital Contact numbers</u></h3></center>
+  <hr>
+  <div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 5</div>
+    <img src="apollo.jpg" style="width:100%">
+    <div class="text">Apollo Hospital</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 5</div>
+    <img src="fortis.png" style="width:100%">
+    <div class="text">Fortis</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 5</div>
+    <img src="globalhospital.jpg" style="width:100%">
+    <div class="text">Global Hospital</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+    <img src="miot.png" style="width:100%">
+    <div class="text">MIOT Hospital</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 5</div>
+    <img src="Sims.png" style="width:100%">
+    <div class="text">Sims Hospital</div>
+  </div>
+
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+
+  </div>
+
+  <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" actives", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " actives";
+  }
+  </script><hr>
+<center><h3><u>Hospital Contact numbers</u></h3></center>
 <br><p><b>Apollo Hospital</b> : 044 2829 3333<br>
 <b>Fortis Malar</b> : 099625 99933<br>
 <b>Global Hospital</b> : 044 3324 2424 <br>
