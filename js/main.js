@@ -1,5 +1,5 @@
 // Reference messages collection
-var messagesRef = firebase.database().ref('records');
+var messagesRef = firebase.database().ref('apollorecords');
 
 // Listen for form submit
 document.getElementById('contactForm').addEventListener('submit', submitForm);
