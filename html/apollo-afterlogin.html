@@ -1,0 +1,126 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<title>apollo login</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+  body{
+    background-color: #e6f3ff;
+  }
+.about {
+  position: absolute;
+  left: 2%;
+  width: 65%;
+  padding: 5%;
+}
+ul {
+  list-style-type: none;
+
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #212121;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color:#0a1c73;
+}
+
+.footer{
+  position:absolute;
+  display:inline-block;
+  left: 10%;
+  right: 10%;
+  bottom:0.5%;
+ }
+ .btn {
+   border: 2px solid black;
+   border-radius: 5px;
+   background-color: #e6f3ff;
+   color: black;
+   padding: 28px 14px 28px 28px;
+   font-size: 16px;
+   cursor: pointer;
+
+ }
+
+ /* Green */
+ .insert {
+   border-color:#00004d;
+   color: blue;
+   width:250px;
+   height:250px;
+
+ }
+
+ .insert:hover {
+   background-color:#00004d;
+   color: white;
+ }
+
+ /* Blue */
+ .view {
+   border-color:#1f2e2e ;
+   color: #1f2e2e;
+   width:250px;
+   height:250px;
+ }
+
+ .view:hover {
+   background: #1f2e2e;
+   color: white;
+ }
+ .container {
+
+      top: 44%;
+      left: 8%;
+    position: absolute;
+   box-sizing: border-box;
+
+ }
+</style>
+</head>
+<body>
+<header style="padding:30px 5px;text-align:center;background-color:rgba(0, 0,51,.85);color:#e6f2ff">
+ <h1>VacciNation</h1>
+</header>
+
+<ul>
+  <li><a  href="home.html">Home</a></li>
+  <li><a class="active" href="login.html">Login</a></li>
+  <li><a href="fix.html">Fix an Appointment</a></li>
+  <li><a href="contact.html">Contacts</a></li>
+
+</ul><br>
+<center><h1>Apollo Hospitals</h1></center><br>
+<div class="container">
+<center>
+<button class="btn insert">Insert New Records</button>
+<button class="btn view">View Records</button>
+</center></div>
+ <br><footer>
+    <div class="footer" style="text-align:center">
+    <p>Developed by Ananya Jaya Kumar, Nauvyashree A and Subitsha TLK</p>
+    </div>
+  </footer>
+</body>
+</html>
