@@ -1,74 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-<title>View records</title>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<style>
-
-
-.about {
-  position: absolute;
-  left: 2%;
-  width: 65%;
-  padding: 5%;
-}
-ul {
-  list-style-type: none;
-
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #212121;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover:not(.active) {
-  background-color: #111;
-}
-
-.active {
-  background-color:#0a1c73;
-}
-
-.footer{
-  position:absolute;
-  display:inline-block;
-  left: 10%;
-  right: 10%;
-  bottom:0.5%;
- }
-</style>
-</head>
+<!DOCTYPE HTML>
+<html>
 <body>
-<header style="padding:30px 5px;text-align:center;background-color:rgba(0, 0,51,.85);color:#e6f2ff">
- <h1>VacciNation</h1>
-</header>
+<style>
+    table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
 
-<ul>
-  <li><a  href="home.html">Home</a></li>
-  <li><a  href="login.html">Login</a></li>
-  <li><a href="fix.html">Fix an Appointment</a></li>
-  <li><a href="contact.html">Contacts</a></li>
+th, td {
+    padding: 15px;
+}
 
-</ul>
+table {
+    border-spacing: 5px;
+}
 
+</style>
 
- <br><footer>
-    <div class="footer" style="text-align:center">
-    <p>Developed by Ananya Jaya Kumar, Nauvyashree A and Subitsha TLK</p>
-    </div>
-  </footer>
+<head>
+    <title>apollo patient records</title>
+    </head>
+<table style="width:100%" id="table_body">
+  <tr id="tr">
+    <th>pid</th>
+    <th>name</th> 
+    <th>dob</th>
+    <th>lastvaccine</th>
+    <th>phone</th>
+    <th>email</th>
+  <tbody>
+ </tbody>
+  </tr>
+</table>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-database.js"></script> 
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDx33Y9t-XqPgvEv34mDEAgftx74akdhp0",
+    authDomain: "vaccinebot.firebaseapp.com",
+    databaseURL: "https://vaccinebot.firebaseio.com",
+    projectId: "vaccinebot",
+    storageBucket: "vaccinebot.appspot.com",
+    messagingSenderId: "85668765310",
+    appId: "1:85668765310:web:8b84b019077889ba3b422f"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../js/apollo.js"></script>
 </body>
 </html>
