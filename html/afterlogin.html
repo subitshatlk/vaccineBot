@@ -87,6 +87,7 @@ li a:hover:not(.active) {
   <li><a  href="login.html">Login</a></li>
   <li><a href="fix.html">Fix an Appointment</a></li>
   <li><a href="contact.html">Contacts</a></li>
+  <li><button onclick="logout()">Logout</button></li>
 
 </ul><br>
 
@@ -105,5 +106,27 @@ li a:hover:not(.active) {
 </a>
 <br>
 </div>
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  
+  
+<script>
+  // Your web app's Firebase configuration
+  
+  var firebaseConfig = {
+    apiKey: "AIzaSyDx33Y9t-XqPgvEv34mDEAgftx74akdhp0",
+    authDomain: "vaccinebot.firebaseapp.com",
+    databaseURL: "https://vaccinebot.firebaseio.com",
+    projectId: "vaccinebot",
+    storageBucket: "vaccinebot.appspot.com",
+    messagingSenderId: "85668765310",
+    appId: "1:85668765310:web:8b84b019077889ba3b422f"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+
+</script>
+
+<script src="../js/login.js"></script>
 </body>
 </html>
