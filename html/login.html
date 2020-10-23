@@ -119,6 +119,10 @@ li a:hover:not(.active) {
 </head>
 <body>
 
+ 
+  
+
+
 <header style="padding:30px 5px;text-align:center;background-color:rgba(0, 0,51,.85);color:#e6f2ff">
  <h1>VacciNation</h1>
 </header>
@@ -132,20 +136,56 @@ li a:hover:not(.active) {
 </ul>
 <div class="container">
 <br><h3 style="text-align:center">Enter your Login credentials</h3><br>
-  <footer style="text-align:center">
-     <form id = "loginForm">
-	 Username : <input type="text" placeholder="Enter provided User ID" name="userid" required/><br><br>
-	 Password : <input type="password" placeholder="Enter Password" name="password" required/><br><br>
+   
+	 Username : <input type="text" placeholder="Enter provided User ID" id="userid" required/><br><br>
+	 Password : <input type="password" placeholder="Enter Password" id="password" required/><br><br>
 
-  <button class="button b1" type="submit"><a href="afterlogin.html">Login</button>
+  <button class="button b1" type="submit" onclick="login()">Login</button>
     <button class="button b2" type="button" ><a href="login.html">Cancel</a></button>
     <button class="button b3" type="button"><a href="home.html">Back to Home</a></button>
- </form>
+
   </div>
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  
+  
+  <script>
+    // Your web app's Firebase configuration
+    
+    var firebaseConfig = {
+      apiKey: "AIzaSyDx33Y9t-XqPgvEv34mDEAgftx74akdhp0",
+      authDomain: "vaccinebot.firebaseapp.com",
+      databaseURL: "https://vaccinebot.firebaseio.com",
+      projectId: "vaccinebot",
+      storageBucket: "vaccinebot.appspot.com",
+      messagingSenderId: "85668765310",
+      appId: "1:85668765310:web:8b84b019077889ba3b422f"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  
+  
+  </script>
+
+  <script src="../js/login.js"></script>
   <br> <footer>
   <div class="footer" style="text-align:center">
   <p>Developed by Ananya Jaya Kumar, Nauvyashree A and Subitsha TLK</p>
   </div>
 </footer>
+
+
+
+
+
+
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+
+<script src="../js/login.js" ></script>
 </body>
 </html>
