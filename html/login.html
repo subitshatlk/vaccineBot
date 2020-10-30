@@ -29,9 +29,9 @@ body{
      left: 50%;
 
      transform: translate(-50%,-50%);
-     width: 490px;
+     width: 445px;
      height: 390px;
-     padding: 40px 20px;
+     padding: 50px 20px;
   box-sizing: border-box;
             background: rgba(230, 243, 255,.65);
             position: absolute;
@@ -56,7 +56,7 @@ border:none;
 
         }
         .button {
-          background-color:  #00001a;
+          background-color:  rgba(0, 0,51,.87);
           border: none;
           color: white;
           padding: 15px 32px;
@@ -124,7 +124,7 @@ li a:hover:not(.active) {
 
 
 <header style="padding:30px 5px;text-align:center;background-color:rgba(0, 0,51,.85);color:#e6f2ff">
- <h1>VacciNation</h1>
+ <h1 style="font-family:Century Gothic">VacciNation</h1>
 </header>
 
 <ul>
@@ -135,10 +135,10 @@ li a:hover:not(.active) {
 
 </ul>
 <div class="container">
-<br><h3 style="text-align:center">Enter your Login credentials</h3><br>
+<h3 style="text-align:center ;font-family:Bahnschrift SemiBold">Enter your Login credentials</h3><br>
 
-	 Username : <input type="text" placeholder="Enter provided User ID" id="userid" required/><br><br>
-	 Password : <input type="password" placeholder="Enter Password" id="password" required/><br><br>
+	<b> Username : <input type="text" placeholder="Enter provided User ID" id="userid" required/><br><br>
+	 Password : </b><input type="password" placeholder="Enter Password" id="password" required/><br><br>
 
   <button class="button b1" type="submit" onclick="login()">Login</button>
     <button class="button b2" type="button" ><a href="login.html">Cancel</a></button>
@@ -170,7 +170,7 @@ li a:hover:not(.active) {
 
   <script src="../js/login.js"></script>
   <br> <footer>
-  <div class="footer" style="text-align:center">
+  <div class="footer" style="text-align:center; font-family: Franklin Gothic Medium">
   <p>Developed by Nauvyashree A, Subitsha TLK and Ananya Jaya kumar</p>
   </div>
 </footer>

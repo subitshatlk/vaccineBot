@@ -152,12 +152,14 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
-
+b{
+  padding: 0% 3.5%;
+}
 </style>
 </head>
 <body>
 <header style="padding:30px 5px;text-align:center;background-color:rgba(0, 0,51,.85);color:#e6f2ff">
- <h1>VacciNation</h1>
+ <h1 style="font-family:Century Gothic">VacciNation</h1>
 </header>
 
 <ul>
@@ -168,105 +170,103 @@ img {vertical-align: middle;}
 
 
 </ul>
+<div class="slideshow-container">
 
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="../images/apollo.jpg" style="width:100%">
+  <div class="text" style="font-family:Bahnschrift">Apollo Hospital</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="../images/fortis.png" style="width:100%">
+  <div class="text" style="font-family:Bahnschrift">Fortis Malar</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="../images/globalhospital.jpg" style="width:100%">
+  <div class="text" style="font-family:Bahnschrift">Global Hospital</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="../images/miot.png" style="width:100%">
+  <div class="text" style="font-family:Bahnschrift">MIOT Hospital</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="../images/Sims.png" style="width:100%">
+  <div class="text" style="font-family:Bahnschrift">Sims Hospital</div>
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" actives", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " actives";
+}
+</script>
 
 
 <div class="center">
 
-<br><center><h3><u>Emergency Ambulance Numbers</u></h3></center>
-<br><p><b>Toll free ambulance number: 102/108</b><br>
-Other important numbers :<br>
+<br><center><h3 style="font-family:Bahnschrift"><u>Emergency Ambulance Numbers</u></h3></center>
+<p><b><center>Toll free ambulance number: 102/108</center></b><br>
+  Other important numbers :<br>
 <b>Flying Squad Ambulance Service:</b><br>
-+917449177777 || +918428077777 || +918124677777
- +918124918888 || +9144 26477777<br>
-<b>Pavithra Ambulance Service:</b><br>
+ +917449177777 | +918428077777 | +918124677777 | +918124918888 | +9144 26477777<br>
+<b>Pavithra Ambulance Service:</b>
 +919840605077<br>
-<b>A.C. Ambulance Service:</b><br>
+<b>A.C. Ambulance Service:</b>
 +919444613123<br>
-<b>Bismi Ambulance Service:</b><br>
+<b>Bismi Ambulance Service:</b>
 +914424816219</p></div><hr>
 <div class="center">
-  <hr>
-  <div class="slideshow-container">
+<br><center><h3 style="font-family:Bahnschrift"><u>Hospital Contact numbers</u></h3></center>
+<br><p><b>Apollo Hospital</b>- 044 2829 3333<br>
+<b>Fortis Malar Hospital</b>- 099625 99933<br>
+<b>Global Hospital</b>- 044 3324 2424 <br>
+<b>Sims Hospital</b>- 044 2000 2001 <br>
+<b>Miot hospital</b>- 044 4200 2288 <br></p></div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 5</div>
-    <img src="../images/apollo.jpg" style="width:100%">
-    <div class="text">Apollo Hospital</div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 5</div>
-    <img src="../images/fortis.png" style="width:100%">
-    <div class="text">Fortis</div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 5</div>
-    <img src="../images/globalhospital.jpg" style="width:100%">
-    <div class="text">Global Hospital</div>
-  </div>
-  <div class="mySlides fade">
-    <div class="numbertext">4 / 5</div>
-    <img src="../images/miot.png" style="width:100%">
-    <div class="text">MIOT Hospital</div>
-  </div>
-  <div class="mySlides fade">
-    <div class="numbertext">5 / 5</div>
-    <img src="../images/Sims.png" style="width:100%">
-    <div class="text">Sims Hospital</div>
-  </div>
-
-
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-  </div>
-  <br>
-
-  <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-    <span class="dot" onclick="currentSlide(4)"></span>
-    <span class="dot" onclick="currentSlide(5)"></span>
-
-  </div>
-
-  <script>
-  var slideIndex = 1;
-  showSlides(slideIndex);
-
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
-
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
-
-  function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" actives", "");
-    }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " actives";
-  }
-  </script><hr>
-<center><h3><u>Hospital Contact numbers</u></h3></center>
-<br><p><b>Apollo Hospital</b> : 044 2829 3333<br>
-<b>Fortis Malar</b> : 099625 99933<br>
-<b>Global Hospital</b> : 044 3324 2424 <br>
-<b>MIOT hospital</b> : 044 4200 2288 <br>
-<b>Sims Hospital</b> :  044 2000 2001 </p></div>
 
 
 </body>
