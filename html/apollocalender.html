@@ -1,6 +1,18 @@
 <html>
 <head>
   <style>
+  table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 15px;
+}
+
+table {
+  border-spacing: 5px;
+}
   .button {
     background-color:  #00001a;
     border: none;
@@ -69,7 +81,7 @@
   <ul>
     <li><a  href="home.html">Home</a></li>
     <li><a  href="login.html">Login</a></li>
-    <li><a href="fix.html">Fix an Appointment</a></li>
+    <li><a href="faq.html">FAQ</a></li>
     <li><a href="contact.html">Contacts</a></li>
 
   </ul><br>
@@ -77,5 +89,40 @@
 <div class="calendly-inline-widget" data-url="https://calendly.com/apollovaccine/30min" style="min-width:320px;height:630px;"></div>
 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
 <!-- Calendly inline widget end -->
+<table style="width:100%" id="table_body">
+  <tr id="tr">
+    <th>dob</th>
+    <th>email</th>
+    <th>name</th>
+    <th>phone</th>
+    <th>pid</th>
+    <th>last-vaccine</th>
+  <tbody>
+ </tbody>
+  </tr>
+</table>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-database.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDx33Y9t-XqPgvEv34mDEAgftx74akdhp0",
+    authDomain: "vaccinebot.firebaseapp.com",
+    databaseURL: "https://vaccinebot.firebaseio.com",
+    projectId: "vaccinebot",
+    storageBucket: "vaccinebot.appspot.com",
+    messagingSenderId: "85668765310",
+    appId: "1:85668765310:web:8b84b019077889ba3b422f"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../js/apollocalender.js"></script>
 </body>
 </html>
